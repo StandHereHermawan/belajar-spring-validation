@@ -21,8 +21,6 @@ public class SayHelloTest {
 
     @Test
     void testError() {
-        Assertions.assertThrows(ConstraintViolationException.class, () -> {
-            sayHello.sayHello("");
-        });
+        Assertions.assertThrows(ConstraintViolationException.class, () -> sayHello.sayHello(""));
     }
 }
